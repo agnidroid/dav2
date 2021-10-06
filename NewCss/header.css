@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-lg: 1030px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #fff;
+}
+
+
+
+.bg-123 {
+    background-color: #123 !important;
+}
+
+/* Top Nav  */
+
+header .top__nav {
+    background-color: #123;
+    font-size: 0.92rem;
+    font-weight: 300;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+header .top__nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .top__nav a:hover {
+    color: #c5c5c5;
+}
+
+header .top__nav ul>li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Main Nav     */
+header .nav {
+    top: 10px;
+    z-index: 999;
+}
+
+header a.navbar-brand>div>img {
+    height: 3.5rem;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 255, 0.714));
+}
+
+header a.navbar-brand>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -0.5rem;
+}
+
+header .navbar-brand div h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header .navbar-brand div h1>span {
+    font-family: "Fredoka One", cursive !important;
+}
+
+header .nav .navbar-brand div h1>span:first-child {
+    color: gold;
+}
+
+header .navbar-brand div h1>span:first-child {
+    text-shadow: 0 1px 2px gold;
+    margin-left: 0.3rem;
+}
+
+header .navbar-brand div h1>span:last-child {
+    text-shadow: 0 1px 1px #000;
+    font-size: 16px;
+    margin-left: -0.5rem;
+}
+
+header .navbar-brand div>span {
+    text-shadow: 0 1px 1px #000;
+    font-size: 14px;
+    font-family: serif;
+    margin-top: -0.2rem;
+    margin-left: 0.5rem;
+}
+
+/* Nav Toggler                       */
+
+header .nav button {
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #c5c5c5;
+    color: #c5c5c5;
+    padding: 0.3rem 0.7rem !important;
+    font-size: 1.18rem;
+    border-radius: 5px;
+    display: none;
+}
+
+header .nav div.menu__container {
+    justify-content: flex-end;
+    flex: 1;
+}
+
+header .nav div.menu__container ul>.nav-item {
+    margin: 0 10px;
+    position: relative;
+}
+
+header .nav div.menu__container ul>.nav-item>.nav-link {
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 8px 6px;
+    color: #c5c5c5;
+}
+
+header .nav div.menu__container ul>.nav-item>.nav-link i {
+    font-weight: normal;
+}
+
+header .nav div.menu__container ul>.nav-item .indicator {
+    background-color: transparent;
+    height: 3px;
+    width: 0;
+    margin: 0;
+    position: absolute;
+    transition: 0.4s;
+}
+
+header .nav div.menu__container ul>.nav-item:hover .nav-link {
+    color: #fff;
+}
+
+header .nav div.menu__container ul>.nav-item:hover .indicator {
+    width: 100%;
+    /* background-color: var(--danger); */
+    background-color: red;
+}
+
+header .nav div.menu__container ul>.nav-item>.active {
+    color: #fff;
+}
+
+header .nav div.menu__container ul>.nav-item>.active+.indicator {
+    width: 100%;
+    /* background-color: var(--danger); */
+    background-color: red;
+}
+
+/* Nav Fixed Top  */
+header .nav.fixed-top a.navbar-brand>div>img {
+    height: 2.9rem;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 255, 0.714));
+}
+header .nav.fixed-top a.navbar-brand>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -0.5rem;
+}
+
+header .nav.fixed-top .navbar-brand div h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+header .nav.fixed-top .navbar-brand div h1>span {
+    font-family: "Fredoka One", cursive !important;
+}
+
+header .nav.fixed-top .navbar-brand div h1>span:first-child {
+    color: gold;
+}
+
+header .nav.fixed-top .navbar-brand div h1>span:first-child {
+    text-shadow: 0 1px 2px gold;
+    margin-left: 0.3rem;
+}
+
+header .nav.fixed-top .navbar-brand div h1>span:last-child {
+    text-shadow: 0 1px 1px #000;
+    font-size: 14px;
+    margin-left: -0.3rem;
+}
+
+header .nav.fixed-top .navbar-brand div>span {
+    text-shadow: 0 1px 1px #000;
+    font-size: 12px;
+    font-family: serif;
+    margin-top: -0.2rem;
+    margin-left: 0.5rem;
+}
+
+/* Image Animate */
+header .image__animation {
+    max-height: 650px;
+    width: 100%;
+    min-height: 550px;
+}
+header .image__animation>div.content {
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.374)), url("../image/three.jpeg"); */
+    /* ; */
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   height: 100%;
+    color: #fff;
+    text-transform: capitalize;
+    display: grid;
+    align-items: flex-end;
+    position: absolute;
+}
+
+header .image__animation>div.content div {
+    margin-bottom: 150px;
+    /* width: 100%; */
+}
+
+header .image__animation>div.content div h1 {
+    font-family: 'Times New Roman';
+}
+header .image__animation>div.content div h1:first-child {
+    font-size: 3.2rem;
+}
+header .image__animation>div.content div h1.display-4 {
+    font-size: 4.2rem;
+}
+
+header .image__animation>div.content button {
+    border: none;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.7rem;
+    outline: none;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 1300px) {
+    header .image__animation>div.content div h1:first-child {
+        font-size: 4rem;
+    }
+    header .image__animation>div.content div h1.display-4 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header .nav div.menu__container {
+        display: none !important;
+    }
+
+    header .navbar__toggler {
+        display: block;
+
+    }
+}

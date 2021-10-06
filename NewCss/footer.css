@@ -1,0 +1,129 @@
+/* Image Animate */
+header .image__animation {
+  max-height: 650px;
+  width: 100%;
+  min-height: 550px;
+}
+header .image__animation > div.content {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  color: #fff;
+  text-transform: capitalize;
+  display: grid;
+  align-items: flex-end;
+  position: absolute;
+}
+
+header .image__animation > div.content.content-1 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.836),
+      rgba(0, 0, 0, 0.374)
+    ),
+    url("../image/three.jpeg");
+  animation: slideImg 40s linear infinite;
+}
+@keyframes slideImg {
+  0% {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.836),
+        rgba(0, 0, 0, 0.374)
+      ),
+      url("../image/three.jpeg");
+  }
+  23% {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.836),
+        rgba(0, 0, 0, 0.374)
+      ),
+      url("../image/three.jpeg");
+  }
+  23% {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.836),
+        rgba(0, 0, 0, 0.374)
+      ),
+      url("../image/7408.jpg");
+  }
+  56% {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.836),
+        rgba(0, 0, 0, 0.374)
+      ),
+      url("../image/7408.jpg");
+  }
+  56% {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.836),
+        rgba(0, 0, 0, 0.374)
+      ),
+      url("../image/1908.i121.003..isometric\ homeschooling\ illustration.jpg");
+  }
+  89.9% {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.836),
+        rgba(0, 0, 0, 0.374)
+      ),
+      url("../image/1908.i121.003..isometric\ homeschooling\ illustration.jpg");
+  }
+  89.9% {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.836),
+        rgba(0, 0, 0, 0.374)
+      ),
+      url("../image/three.jpeg");
+  }
+}
+
+header .image__animation > div.content div {
+  margin-bottom: 150px;
+  /* width: 100%; */
+}
+
+header .image__animation > div.content div h1 {
+  font-family: "Times New Roman";
+}
+header .image__animation > div.content div h1:first-child {
+  font-size: 3.2rem;
+}
+header .image__animation > div.content div h1.display-4 {
+  font-size: 4.2rem;
+}
+
+header .image__animation > div.content button {
+  border: none;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.7rem;
+  outline: none;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 1300px) {
+  header .image__animation > div.content div h1:first-child {
+    font-size: 4rem;
+  }
+  header .image__animation > div.content div h1.display-4 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header .nav div.menu__container {
+    display: none !important;
+  }
+
+  header .navbar__toggler {
+    display: block;
+  }
+}

@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  background-color: rgba(220, 220, 220, 0.721);
+  width: 10px;
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: linear-gradient(rgb(164, 162, 162), lightgray);
+}
+body::-webkit-scrollbar-button {
+  height: 0;
+}
+::selection {
+  background-color: transparent;
+  color: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  border: none;
+  outline: none;
+  box-shadow: none !important;
+}
+
+.whitesmoke {
+  background-color: whitesmoke;
+}
+
+/* Box Menu  */
+#main #main_content > div.box-menu > div {
+  display: flex;
+  /* margin-top: 1rem; */
+  /* max-width: 1200px; */
+  padding: 0;
+  /* margin: auto; */
+}
+#main #main_content > div.box-menu > div > div {
+  flex: 1;
+  height: 210px;
+  padding: 0 1rem;
+}
+#main #main_content > div.box-menu > div > div > a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+#main #main_content > div.box-menu > div > div > a > h4 {
+  font-size: 1.1rem;
+  flex: 0.8;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+#main #main_content > div.box-menu > div > div > a > i.fa {
+  font-size: 4.5rem;
+  flex: 1.4;
+  height: 56px;
+}
+#main #main_content > div.box-menu > div > div > a > p {
+  font-size: 1rem;
+  padding: 0 5px;
+  flex: 0.8;
+}
+@media screen and (max-width: 950px) {
+  #main #main_content > div.box-menu > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 210px);
+  }
+
+  #main #main_content > div.box-menu > div > div {
+    /* flex: 1; */
+    height: 210px;
+  }
+  #main #main_content > div.box-menu > div > div:nth-child(3) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  #main #main_content > div.box-menu > div > div:last-child {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+}
+@media screen and (max-width: 410px) {
+  #main #main_content > div.box-menu {
+    padding: 0 0;
+  }
+  #main #main_content > div.box-menu > div > div > a > p {
+    font-size: 0.87rem;
+  }
+}
+
+/* Latest News */
+#main #main_content > div.bulletin {
+  background: green;
+  height: 40px;
+}
+
+
+/* Introduction  */
+/* #main .article > .introduction {
+  width: 100%;
+  padding: 3rem;
+} */
+#main #main_content > div > section > div.introduction > span {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
+  color: grey;
+  letter-spacing: 10px;
+}
+#main #main_content > div > section > div.introduction > h1 {
+  text-transform: capitalize;
+  color: rgba(51, 51, 51, 0.843);
+  font-size: 35px;
+  margin: 1rem 0;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#main #main_content > div > section > div.introduction > p {
+  font-size: 15px;
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 590px;
+  margin: auto;
+  font-size: 15px;
+}
+@media screen and (max-width: 345px) {
+  #main #main_content > div > section > div.introduction > h1 {
+    font-size: 31.8px;
+  }
+  #main #main_content > div > section > div.introduction > span {
+    font-size: 14px;
+  }
+}
+
+/* section 1 */
+
+/* #main #main_content > section.sec__1 { */
+  /* display: grid; */
+  /* display: flex */
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+/* } */
+#main #main_content > div > section.sec__1 > div {
+  /* background-color: green; */
+  /* display: inline-block; */
+  /* width: 100%; */
+  flex: 0.9;
+}
+#main #main_content > div > section.sec__1 > div:last-child {
+  flex: 1.1;
+}
+
+#main #main_content > div > section.sec__1 > div > header > .top {
+  display: flex;
+  align-items: center;
+}
+#main #main_content > div > section.sec__1 > div > header > .top > h1 {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  margin-right: 0.3rem;
+}
+#main #main_content > div > section.sec__1 > div > header > .top > .fa {
+  font-size: 1.4rem;
+}
+#main #main_content > div > section.sec__1 > div > header > .top > button {
+  font-size: 0.8rem;
+  padding: 0.1rem 0.8rem;
+  height: 100%;
+  font-weight: 300;
+  margin-left: 0.4rem;
+}
+#main #main_content > div > section.sec__1 > div > header > .bottom > h1 {
+  font-size: 0.95rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0;
+  color: #5a5a5a;
+}
+#main #main_content > div > section.sec__1 > div > header > .bottom > hr {
+  width: 9rem;
+  height: 1px;
+  margin-top: 0.5rem;
+}
+#faqs header h1 > span:last-child {
+  font-size: 1rem;
+}
+#main #main_content > div > section.sec__1 > div#faqs > header > .top > .fa {
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+
+
+/* #main
+  #main_content > div > section.sec__1 > div > main {
+    margin-top: 1rem;
+  } */
+
+
+#main #main_content > div > section.sec__1 > div > main > div.accordion__container > .accordion__item > button {
+  font-size: 0.9rem;
+  color: #5a5a5a;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  text-transform: capitalize;
+}
+#main #main_content > div > section.sec__1 > div > main > div.accordion__container > .accordion__item > button > i {
+  /* width: 2rem;
+  height: 2rem; */
+  padding: 0.19rem 0.5rem;
+  margin-right: 0.4rem;
+  box-shadow: none;
+}
+#main #main_content > div > section.sec__1 > div > main > div.accordion__container > .accordion__item > div {
+  margin-left: 0.89rem;
+  padding-left: 1.3rem;
+  font-size: 0.9rem;
+  padding-bottom: 0.7rem;
+  padding-top: 0.1rem;
+  border-left: 1.2px dashed #5a5a5a;
+}
+#main #main_content > div > section.sec__1 > div > main > div.accordion__container > .accordion__item > div > p {
+  margin-bottom: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  height: 0;
+  /* display: none; */
+  color: #5a5a5a;
+}
+#main #main_content > div > section.sec__1 > div > main > div.accordion__container > .accordion__item.active div > p{
+  height: 100px;
+}
+#main #main_content > div > section.sec__1 > div > main > div.accordion__container > .accordion__item.active i::before {
+  content: "\f068";
+}
+#main #main_content > div > section.sec__1 > div > main > div.accordion__container > .accordion__item:last-child > div {
+  border-left: none;
+}
+#main #main_content > div > section.sec__1 > div.gallery_container > main > div.gallery > div.img_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 0.5rem;
+}
+#main #main_content > div > section.sec__1 > div.gallery_container > main > div.gallery > div.img_container > div {
+    background-color: #c5c5c5;
+    overflow: hidden;
+    min-width: 120px;
+    height: 100px;
+    text-align: center;
+}
+#main #main_content > div > section.sec__1 > div.gallery_container > main > div.gallery > div.img_container > div > img {
+    /* height: 100px; */
+    width: 100%;
+    max-height: 100%
+}
+
+/* counter */
+#main #main_content > div.increment-section {
+  background-image: linear-gradient(#212331de, #212331de), url("../image/three.jpeg");
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+#main #main_content > div.increment-section div.container {
+  /* display: flex; */
+  justify-content: space-between;
+  padding: 4rem 1rem;
+}
+#main #main_content > div.increment-section div.container > div.counter {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-shadow: 0 0 1px #fff;
+  align-items: center;
+  color: #fff;
+}
+#main #main_content > div.increment-section div.container > div.counter > span {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+#main #main_content > div.increment-section div.container > div.counter > span > div.counter-control {
+  display: flex;
+  align-items: center;
+}
+#main #main_content > div.increment-section div.container > div.counter > span > div.counter-control {
+  font-size: 3rem;
+}
+#main #main_content > div.increment-section div.container > div.counter > hr {
+  width: 50px;
+  height: 1px;
+  margin-top: 0;
+}
+#main #main_content > div.increment-section div.container > div.counter > h1 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+/* QOUTES */
+#main #main_content > div > section.qoutes > div {
+  padding: 2.5rem 0;
+}
+#main #main_content > div > section.qoutes > div > i.fa-quote-left {
+  color: grey;
+}
+#main #main_content > div > section.qoutes > div > p {
+  max-width: 590px;
+  margin: auto;
+  text-transform: capitalize;
+  /* color: rgb(68, 67, 67); */
+  color: grey;
+  padding: 1.5rem 0;
+  font-size: 1rem;
+}
+#main #main_content > div > section.qoutes > div > h3 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.843);
+}

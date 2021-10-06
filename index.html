@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+    <!---  GOOGLE FONTS   -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+
+
+    <!-- Custom Style -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <link rel="stylesheet" href="css/newStyle.css"> -->
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!--  Font-awesome Icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>DAV PUBLIC SCHOOL AURANGABAD BIHAR</title>
+
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- <div id="root"></div> -->
+    <div class="container-fluid d-none p-0" id="main">
+        <!-- Header -->
+        <div class="main__header" id="">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand mr-0 p-0" href="#">
+                        <img src="image/logo.png" alt="logo" />
+                        <div>
+                            <h1 class="">
+                                <span class="">DAV</span>
+                                <span>PUBLIC SCHOOL</span>
+                            </h1>
+                            <span class="">AURANGABAD, BIHAR</span>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler mr-2 ml-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home"></i></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">About School</a></li>
+                                    <li><a class="dropdown-item" href="#">Principal’s Message</a></li>
+                                    <li><a class="dropdown-item" href="#">Aims And Objectives</a></li>
+                                    <li><a class="dropdown-item" href="#">School Statistics</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Guidelines</a></li>
+                                    <li><a class="dropdown-item" href="#">Facilities</a></li>
+                                    <li><a class="dropdown-item" href="#">Knowledge</a></li>
+                                    <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                </ul>
+                            </li>
+
+                            <!---
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admission</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Admission Form</a></li>
+                                        <li><a class="dropdown-item" href="#">Step Towards Admission</a></li>
+                                        <li><a class="dropdown-item" href="#">Transfer-Certificate</a></li>
+                                    </ul>
+                                </li>
+    
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Guidelines</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Assembly And Moral Education</a></li>
+                                        <li><a class="dropdown-item" href="#">For-Students</a></li>
+                                        <li><a class="dropdown-item" href="#">For-Parents</a></li>
+                                    </ul>
+                                </li>
+    
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Facilities</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Transport Facilities</a></li>
+                                    </ul>
+                                </li>
+    
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Knowledge</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Texst One/a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        ---->
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">For-Students</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">School Uniform</a></li>
+                                    <li><a class="dropdown-item" href="#">Attendance</a></li>
+                                    <li><a class="dropdown-item" href="#">Evaluation And Progress Report</a></li>
+                                    <li><a class="dropdown-item" href="#">Withdrawals</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Help-Desk</a>
+                                <ul class="dropdown-menu" style="right: 5px;" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Feedback</a></li>
+                                    <li><a class="dropdown-item" href="#">P.T.M</a></li>
+                                    <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Photo Gallery</a>
+                        </li> -->
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Achivements</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Activities</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Faculty</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="slide-image">
+                <div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                </div>
+                <div class="animated-logo-container">
+                    <div class="container-fluid" id="animated-logo-container">
+                        <!-- <div class="school-logo">
+                            <img src="/image/logo.png" alt="" class="">
+                        </div> -->
+                        <div class="container-fluid p-0 m-0 text-center">
+                            <div class="slide-container">
+                                <div class="slider">
+                                    <div>
+                                        <h3 class="">डीएवी पब्लिक स्कूल </h3>
+                                        <h4>औरंगाबाद, Bihar</h4>
+                                        <p>​Managed by DAV College Managing Commitee, Chitra Gupta Road, New Delhi -
+                                            110055</p>
+                                    </div>
+                                </div>
+
+                                <div class="slider">
+                                    <div>
+                                        <h3>DAV Public School </h3>
+                                        <h4>Aurangabad, Bihar</h4>
+                                        <p>​Managed by DAV College Managing Commitee, Chitra Gupta Road, New Delhi -
+                                            110055</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="fa fa-caret-left prev" onclick="nextSlide()"></button>
+                <button class="fa fa fa-caret-right next" onclick="prevSlide()"></button>
+            </section>
+        </div>
+
+        <section class="article">
+
+            <div class="box-menu mt-5">
+                <div class="container-fluid box-menu">
+                    <div class="bg-light">
+                        <a href="" class="text-decoration-none">
+                            <h4 class="text-uppercase font-weight-600 mt-0">research</h4>
+                            <i class="fa fa-flask font-54 mb-10"></i>
+                            <p>Mapping the Innovations & Collaborations</p>
+                        </a>
+                    </div>
+                    <div class="bg-secondary ">
+                        <a href="" class="text-light text-decoration-none">
+                            <h4 class="text-uppercase font-weight-600 mt-0">startup</h4>
+                            <i class="fa fa-rocket font-54 mb-10"></i>
+                            <p class="">Success stories of researchers &amp; entrepreneurs</p>
+                        </a>
+                    </div>
+                    <div class="bg-light">
+                        <a href="" class="text-decoration-none">
+                            <h4 class="text-uppercase font-weight-600 mt-0">News</h4>
+                            <i class="fa fa-newspaper-o font-54 mb-10"></i>
+                            <p class="">Panorama of Events</p>
+                        </a>
+                    </div>
+                    <div class="bg-secondary">
+                        <a href="" class="text-light text-decoration-none">
+                            <h4 class="text-uppercase font-weight-600 mt-0">campus life</h4>
+                            <i class="fa fa-users font-54 mb-10"></i>
+                            <p class="">Explore Beyond the Classrooms</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bulletin">
+                <div class="container-fluid">
+                    <h4 class="text-uppercase font-weight-600">bulletin</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="introduction text-center">
+                <span>introduction</span>
+                <h1>welcome to our campus</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ab at nihil aspernatur architecto
+                    cupiditate commodi. Temporibus a voluptate ex impedit, cupiditate officia sequi earum sunt eligendi
+                    quam aut accusantium?
+                    Natus accusantium, nam magnam, quisquam amet dicta aspernatur ipsa, recusandae cupiditate eveniet
+                    vitae! Culpa eaque error excepturi fuga velit at eveniet sapiente ut porro. Possimus distinctio quos
+                    veritatis recusandae voluptas.
+                </p>
+            </div>
+
+            <div class="professional">
+                <div class="container-fluid text-center">
+                    <div class="">
+                        <span>professional</span>
+                        <h1>teachers</h1>
+                        <div class="teachers">
+                            <img src="image/logo.png" alt="">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat modi soluta aut id,
+                                itaque dolorum consequatur suscipit culpa eaque iure ab eius delectus perspiciatis cum
+                                quis molestiae dolores deleniti illo!
+                                Nobis assumenda itaque, eligendi, amet tempora aliquam cupiditate odit eius dolorem
+                                impedit expedita, nostrum porro sequi praesentium animi dicta debitis explicabo ipsam
+                                ad. Voluptatem perspiciatis, neque cum expedita harum at.
+                                <button class="btn btn-sm btn-dark readMore">read more</button>
+                            </p>
+                            <h3 class="name">John Doe</h3>
+                            <span>music teacher</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="join_us">
+                <header>
+                    <h1 class="text-center">join us today</h1>
+                </header>
+                <div class="container-fluid">
+                    <form action="" class="bg-dark">
+                        <div class="form-group">
+                            <label for="name">Name*</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email">
+                        </div>
+                        <input type="submit" value="submit" class="btn btn-secondary">
+                    </form>
+                    <div class="image">
+                        <img src="image/7408.jpg" class="figure" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="upcoming_events">
+                <span>don't miss out</span>
+                <h1>upcoming events</h1>
+
+            </div>
+
+            <div class="qoutes text-center">
+                <i class="fa fa-quote-left"></i>
+                <p>
+                    Everybody is genius. but if you judge a fish by its ability to climb a tree, it will live its whole
+                    life believing that it is stupid.
+                </p>
+                <h3>albert einstein</h3>
+            </div>
+        </section>
+
+        <!-- Increment area -->
+        <section class="increment-section">
+            <div class="counter-container">
+                <div class="counter">
+                    <div class="counter-control" data-target="4000"></div>
+                    <span>Project Completed</span>
+                </div>
+                <div class="counter">
+                    <div class="counter-control" data-target="8000"></div>
+                    <span>Satisfied Client</span>
+                </div>
+                <div class="counter">
+                    <div class="counter-control" data-target="15000"></div>
+                    <span>Project Ongoing</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer  --
+        <footer class="footer-section">
+            <div class="content">
+                <div class="about">
+                    <div class="logo">
+                        <img src="image/logo.png" alt="" srcset="">
+                    </div>
+                    <p>DAV PUBLIC SCHOOL AURANGABAD, BIHAR</p>   
+                    <div class="social-media">
+                        <a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-telegram"></i>
+                        </a>
+                    </div> 
+                </div>
+                
+                <div class="link">
+                    <div class="quick-link">
+                        <header class="border-bottom">
+                            Quick Links
+                        </header>
+                        <ul class="">
+                            <li><a href="">Admission</a></li>
+                            <li><a href="">Admission</a></li>
+                            <li><a href="">Admission</a></li>
+                            <li><a href="">Admission</a></li>
+                            <li><a href="">Admission</a></li>
+                            <li><a href="">Admission</a></li>
+                        </ul>
+                    </div>
+                    <div class="quick-link">
+                        <header class="border-bottom">
+                            Quick Links
+                        </header>
+                        <ul class="">
+                            <li><a href="">Admission</a></li>
+                            <li><a href="">Admission</a></li>
+                            <li><a href="">Admission</a></li>
+                            <li><a href="">Admission</a></li>
+                            <li><a href="">Admission</a></li>
+                            <li><a href="">Admission</a></li>
+                        </ul>
+                    </div>
+                </div>
+            <div class="copyright-section">
+                <p class="m-0 p-3 text-light">&copy; DAV PUBLIC SCHOOL AURANGABAD, BIHAR</p>
+            </div>
+        </footer>---->
+    </div>
+
+    <main id="main">
+        <div class=" p-0">
+            <!-- Header  -->
+            <header class="" id="header">
+                <div class="brand__name pt-1 d-none bg-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <div class="d-flex">
+                                <img src="image/logo.png" alt="logo" />
+                                <div class="text-uppercase">
+                                    <h1 class="">
+                                        <span class="">DAV</span>
+                                        <span>PUBLIC SCHOOL</span>
+                                    </h1>
+                                    <span class="">AURANGABAD, BIHAR</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg border-bottom navbar-light bg-light" id="nav">
+                    <div class="container-xl">
+                        <a class="navbar-brand" href="#">
+                            <div class="d-flex">
+                                <img src="image/logo.png" alt="logo" />
+                                <div class="text-uppercase">
+                                    <h1 class="">
+                                        <span class="">DAV</span>
+                                        <span>PUBLIC SCHOOL</span>
+                                    </h1>
+                                    <span class="">AURANGABAD, BIHAR</span>
+                                </div>
+                            </div>
+                        </a>
+                        <button class="navbar-toggler mr-2 ml-auto" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav ml-auto pl-2">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#"><i
+                                            class="fa fa-home"></i></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">About School</a></li>
+                                        <li><a class="dropdown-item" href="#">Principal’s Message</a></li>
+                                        <li><a class="dropdown-item" href="#">Aims And Objectives</a></li>
+                                        <li><a class="dropdown-item" href="#">School Statistics</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Guidelines</a></li>
+                                        <li><a class="dropdown-item" href="#">Facilities</a></li>
+                                        <li><a class="dropdown-item" href="#">Knowledge</a></li>
+                                        <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">For-Students</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">School Uniform</a></li>
+                                        <li><a class="dropdown-item" href="#">Attendance</a></li>
+                                        <li><a class="dropdown-item" href="#">Evaluation And Progress Report</a></li>
+                                        <li><a class="dropdown-item" href="#">Withdrawals</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">Help-Desk</a>
+                                    <ul class="dropdown-menu" style="right: 5px;"
+                                        aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Feedback</a></li>
+                                        <li><a class="dropdown-item" href="#">P.T.M</a></li>
+                                        <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Achivements</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Activities</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Faculty</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="carousel" id="carousel">
+                    <div class="carousel_container">
+                        <div class="container">
+                            <div class="carousel_item"></div>
+                            <div class="carousel_item"></div>
+                            <div class="carousel_item"></div>
+                        </div>
+                        <div class="button_container" id="prev">
+                            <button class="fa fa-angle-left"></button>
+                        </div>
+                        <div class="button_container" id="next">
+                            <button class="fa fa-angle-right"></button>
+                        </div>
+                    </div>
+                    <div class="animated-logo-container">
+                        <div class="container-fluid" id="animated-logo-container">
+                            <div class="container-fluid p-0 m-0 text-center">
+                                <div class="slide-container">
+                                    <div class="slider">
+                                        <div>
+                                            <h3 class="">डीएवी पब्लिक स्कूल </h3>
+                                            <h4>औरंगाबाद, Bihar</h4>
+                                            <p>​Managed by DAV College Managing Commitee, Chitra Gupta Road, New Delhi -
+                                                110055</p>
+                                        </div>
+                                    </div>
+                                    <div class="slider">
+                                        <div>
+                                            <h3>DAV Public School </h3>
+                                            <h4>Aurangabad, Bihar</h4>
+                                            <p>​Managed by DAV College Managing Commitee, Chitra Gupta Road, New Delhi -
+                                                110055</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main  -->
+            <main id="main_content">
+                <!-- box menu  -->
+                <div class="box-menu container-sm mt-4 mb-3">
+                    <div class="border container-sm">
+                        <div class="bg-light">
+                            <a href="" class="text-decoration-none">
+                                <h4 class="text-uppercase font-weight-600 mt-0">research</h4>
+                                <i class="fa fa-flask font-54 mb-10"></i>
+                                <p>Mapping the Innovations & Collaborations</p>
+                            </a>
+                        </div>
+                        <div class="bg-secondary ">
+                            <a href="" class="text-light text-decoration-none">
+                                <h4 class="text-uppercase font-weight-600 mt-0">startup</h4>
+                                <i class="fa fa-rocket font-54 mb-10"></i>
+                                <p class="">Success stories of researchers &amp; entrepreneurs</p>
+                            </a>
+                        </div>
+                        <div class="bg-light">
+                            <a href="" class="text-decoration-none">
+                                <h4 class="text-uppercase font-weight-600 mt-0">News</h4>
+                                <i class="fa fa-newspaper-o font-54 mb-10"></i>
+                                <p class="">Panorama of Events</p>
+                            </a>
+                        </div>
+                        <div class="bg-secondary">
+                            <a href="" class="text-light text-decoration-none">
+                                <h4 class="text-uppercase font-weight-600 mt-0">campus life</h4>
+                                <i class="fa fa-users font-54 mb-10"></i>
+                                <p class="">Explore Beyond the Classrooms</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bulletin container-lg">
+                    <div class="bg-dark">
+                        <h1>Latest news</h1>
+                        <div class="news">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="latest__news"> -->
+                <!-- <div class="">
+                        <h1>latest news</h1>
+                        <div class="news">
+                            <p>Flaten the curve.stay home, stay safe.</p>
+                            <span>Flaten the curve.stay home, stay safe.</span>
+                        </div>
+                    </div> -->
+                <!-- </div> -->
+
+                <!-- welcome -->
+                <div class="container-xl mt-3 p-sm-0">
+                    <section class="container-sm">
+                        <div class="introduction text-center mb-5">
+                            <span class="text-uppercase">introduction</span>
+                            <h1 class="text-capitalize">welcome to our campus</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ab at nihil aspernatur
+                                architecto
+                                cupiditate commodi. Temporibus a voluptate ex impedit, cupiditate officia sequi earum
+                                sunt eligendi
+                                quam aut accusantium?
+                                Natus accusantium, nam magnam, quisquam amet dicta aspernatur ipsa, recusandae
+                                cupiditate eveniet
+                                vitae! Culpa eaque error excepturi fuga velit at eveniet sapiente ut porro. Possimus
+                                distinctio quos
+                                veritatis recusandae voluptas.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="principal__message">
+                        <div class="container bg-danger">
+                            <img src="./image/logo.png" alt="Principal Image">
+                            <div class="message">
+                                <p>
+                                    Lorem ipsum dolor sit amet lorem, con Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Perferendis, quisquam aut deserunt consequatur modi culpa,
+                                    praesentium dolores, illum id ullam perspiciatis quae debitis necessitatibus dicta
+                                    rerum repudiandae corrupti porro at?
+                                    Atque incidunt vero perspiciatis ipsam natus maiores? Repella
+                                </p>
+                                <button class="btn btn-sm btn-success">Read More</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="sec__1 d-md-flex container">
+                        <div class="faqs_container" id="faqs">
+                            <header>
+                                <div class="top">
+                                    <h1 class="text-uppercase"><span class="text-danger">faq</span><span>s</span></h1>
+                                    <i class="fa fa-question-circle-o"></i>
+                                    <button class="text-uppercase btn btn-danger">view all</button>
+                                </div>
+                                <div class="bottom">
+                                    <h1 class="text-uppercase">frequently asked questions</h1>
+                                    <hr color="red">
+                                    <style>
+                                        .underline {
+                                            width: 50px;
+                                            height: 2px;
+                                            position: relative;
+                                        }
+
+                                        .underline::before {
+                                            position: absolute;
+                                            top: 0;
+                                            width: 10px;
+                                            height: 4px;
+                                        }
+                                    </style>
+                                    <div class="underline">
+                                    </div>
+                                </div>
+                            </header>
+
+                            <main>
+                                <div class="accordion__container" id="accordion">
+                                    <div class="accordion__item">
+                                        <button>
+                                            <i class="fa btn btn-danger fa-plus"></i>
+                                            <span>whom to contact for postgraduate?</span>
+                                        </button>
+                                        <div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab numquam ea
+                                                quidem iusto, omnis soluta tempora distinctio tenetur quia, porro
+                                                quisquam sequi maxime in vitae nisi odit sunt quos. Esse!</p>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                    <div class="accordion__item">
+                                        <button>
+                                            <i class="fa btn btn-danger fa-plus"></i>
+                                            <span>whom to contact for postgraduate?</span>
+                                        </button>
+                                        <div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab numquam ea
+                                                quidem iusto, omnis soluta tempora distinctio tenetur quia, porro
+                                                quisquam sequi maxime in vitae nisi odit sunt quos. Esse!</p>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                    <div class="accordion__item">
+                                        <button>
+                                            <i class="fa btn btn-danger fa-plus"></i>
+                                            <span>whom to contact for postgraduate?</span>
+                                        </button>
+                                        <div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab numquam ea
+                                                quidem iusto, omnis soluta tempora distinctio tenetur quia, porro
+                                                quisquam sequi maxime in vitae nisi odit sunt quos. Esse!</p>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                        <div class="gallery_container ml-md-5" id="gallery">
+                            <header>
+                                <div class="top">
+                                    <h1 class="text-uppercase">photo&nbsp;<span class="text-danger">gallery</span></h1>
+                                    <i class="fa fa-picture-o"></i>
+                                    <button class="text-uppercase btn btn-danger">view all</button>
+                                </div>
+                                <div class="bottom">
+                                    <h1 class="text-uppercase">multi-hued reflections</h1>
+                                    <hr color="red">
+                                    <style>
+                                        .underline {
+                                            width: 50px;
+                                            height: 2px;
+                                            position: relative;
+                                        }
+
+                                        .underline::before {
+                                            position: absolute;
+                                            top: 0;
+                                            width: 10px;
+                                            height: 4px;
+                                        }
+                                    </style>
+                                    <div class="underline">
+                                    </div>
+                                </div>
+                            </header>
+                            <main>
+                                <div class="gallery">
+                                    <div class="img_container">
+                                        <div class="image"><img src="galleryImage/ti2.jpg" alt=""></div>
+                                        <div class="image"><img src="galleryImage/IMG.jpeg" alt=""></div>
+                                        <div class="image"><img src="galleryImage/IMG_2.jpg" alt=""></div>
+                                        <div class="image"><img src="galleryImage/nikhilendra.png" alt=""></div>
+                                        <div class="image"><img src="galleryImage/IMG.jpeg" alt=""></div>
+                                        <div class="image"><img src="galleryImage/nikhilendra.png" alt=""></div>
+                                        <div class="image"><img src="galleryImage/IMG_2.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- increment-section -->
+                <div class="increment-section mt-2">
+                    <div class="container-xl">
+                        <div class="container d-sm-flex">
+                            <div class="counter">
+                                <span>
+                                    <div class="counter-control" data-target="3000"></div>+
+                                </span>
+                                <hr color="#c5c5c5">
+                                <h1>students</h1>
+                            </div>
+                            <div class="counter">
+                                <span>
+                                    <div class="counter-control" data-target="100"></div>+
+                                </span>
+                                <hr color="#c5c5c5">
+                                <h1>faculty</h1>
+                            </div>
+                            <div class="counter">
+                                <span>
+                                    <div class="counter-control" data-target="150"></div>+
+                                </span>
+                                <hr color="#c5c5c5">
+                                <h1>staff</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- qoutes  -->
+                <div class="whitesmoke">
+                    <section class="qoutes container-xl">
+                        <div class="text-center container-sm">
+                            <i class="fa fa-quote-left"></i>
+                            <p>
+                                Everybody is genius. but if you judge a fish by its ability to climb a tree, it will
+                                live its whole
+                                life believing that it is stupid.
+                            </p>
+                            <h3>albert einstein</h3>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <!-- footer  -->
+            <footer class="">
+                <div class="container-xl container">
+                    <section class="sec_1">
+                        <div class="container text-light">
+                            <img src="image/logo.png" alt="">
+                            <div class="name__address">
+                                <span>DAV public school aurangabad</span>
+                                <span>dayanand vihar, Aurangabad, bihar 824101</span>
+                            </div>
+                            <div class="contact">
+                                <span><i class="fa fa-phone"></i>9801079232</span>
+                                <span><i class="fa fa-envelope"></i>info@davauranagabad.sc.in </span>
+                                <span><i class="fa fa-globe"></i>www.davauranagabd.com</span>
+                            </div>
+
+                            <div class="social_handle">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                            </div>
+
+                        </div>
+                    </section>
+                    <section class="sec_2">
+                        <div class="container text-light">
+                            <header>
+                                <h1>Quick Links</h1>
+                                <hr color="red">
+                            </header>
+                            <div class="main">
+                                <ul>
+                                    <li>
+                                        <a href="">Departments</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Centres</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Schools</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Centres of Excellence</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Anti-Sexual Harassment Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Right to Information</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Switch to Dark Mode</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="sec_3">
+                        <div class="container text-light">
+                            <header>
+                                <h1>Explore</h1>
+                                <hr color="red">
+                            </header>
+                            <div class="main">
+                                <ul>
+                                    <li>
+                                        <a href="">Campus Life</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Institute Newsletter</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Educational Programmes</a>
+                                    </li>
+                                    <li>
+                                        <a href="">PhD Seminar</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Social Initiatives</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="sec_4">
+                        <div class="container text-light">
+                            <header>
+                                <h1><i class="fa fa-cloud mr-1"></i>Bihar</h1>
+                                <hr color="red">
+                            </header>
+                            <div class="main">
+                                <div class="timestamp_container">
+                                    <div id="timestamp"></div>
+                                </div>
+                                <div class="weather_container">
+                                    <div>
+                                        <i class="fa fa-cloud"></i>
+                                    </div>
+                                    <div class="weather" id="weather">
+                                        <h1>Haze</h1>
+                                        <span class="">Temp: 37 <i class="fa fa-circle-o position-relative"
+                                                style="font-size: 6px; top: -8px;"></i> C</span>
+                                    </div>
+                                </div>
+                                <div class="humidity_and_wind">
+                                    <span>Humidity: 39%</span>
+                                    <span>Wind: 30km/h</span>;
+                                </div>
+
+                                <div class="air_pollution">
+                                    <span>
+                                        <span>Air Pollution (PM2.5): 45.21</span>
+                                        <span class="animated_heart fa fa-heart text-success"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="container-fluid copyright__sec">
+                    <div class="container-xl">
+                        <p>Copyright &COPY; DAV Public School. All Rights Reserved. <a href="#">credits &
+                                Attributions</p>
+
+                        <p>Developed & Maintained by <a href="#">CSC DAV Public School Aurangabad, (Bihar)</a></p>
+                    </div>
+                    <button class="fa fa-chevron-up btn btn-dark" id="toTopBtn"></button>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+
+    </script>
+
+    <script>
+        const slide = document.querySelectorAll("#main > div.main__header > .slide-image > div .slide")
+        const prev = document.querySelector("#main > div.main__header > .slide-image > .prev")
+        const next = document.querySelector("#main > div.main__header > .slide-image > .next")
+        slide[0].classList.add("current")
+        const nextSlide = () => {
+            const current = document.querySelector(".current")
+            current.classList.remove("current")
+            if (current.nextElementSibling) {
+                current.nextElementSibling.classList.add("current")
+            } else {
+                slide[0].classList.add("current")
+            }
+            setTimeout(() => current.classList.remove("current"));
+        }
+        const prevSlide = () => {
+            const current = document.querySelector(".current")
+            current.classList.remove("current")
+            if (current.previousElementSibling) {
+                current.previousElementSibling.classList.add("current")
+            } else {
+                slide[1].classList.add("current")
+            }
+            setTimeout(() => current.classList.remove("current"));
+            // setTimeout(slide, 1000);
+        }
+
+
+        console.log(next);
+        console.log(prev);
+
+        prev.onclick = () => {
+            prevSlide()
+        }
+        if (true) {
+            setInterval(nextSlide, 10000)
+        }
+
+        // slideImg()
+    </script>
+
+</body>
+
+
+
+</html>
+
+<!-- 
+<header class="" id="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" id="nav">
+        <div class="container-xl">
+            <a class="navbar-brand" href="#">
+                <div class="d-flex">
+                    <img src="image/logo.png" alt="logo" />
+                    <div class="text-uppercase">
+                        <h1 class="">
+                            <span class="">DAV</span>
+                            <span>PUBLIC SCHOOL</span>
+                        </h1>
+                        <span class="">AURANGABAD, BIHAR</span>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler mr-2 ml-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto pl-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i
+                                class="fa fa-home"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">About School</a></li>
+                            <li><a class="dropdown-item" href="#">Principal’s Message</a></li>
+                            <li><a class="dropdown-item" href="#">Aims And Objectives</a></li>
+                            <li><a class="dropdown-item" href="#">School Statistics</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Guidelines</a></li>
+                            <li><a class="dropdown-item" href="#">Facilities</a></li>
+                            <li><a class="dropdown-item" href="#">Knowledge</a></li>
+                            <li><a class="dropdown-item" href="#">Gallery</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">For-Students</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">School Uniform</a></li>
+                            <li><a class="dropdown-item" href="#">Attendance</a></li>
+                            <li><a class="dropdown-item" href="#">Evaluation And Progress Report</a></li>
+                            <li><a class="dropdown-item" href="#">Withdrawals</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">Help-Desk</a>
+                        <ul class="dropdown-menu" style="right: 5px;"
+                            aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Feedback</a></li>
+                            <li><a class="dropdown-item" href="#">P.T.M</a></li>
+                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Achivements</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Activities</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Faculty</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="carousel" id="carousel">
+        <div class="carousel_container">
+            <div class="container">
+                <div class="carousel_item"></div>
+                <div class="carousel_item"></div>
+                <div class="carousel_item"></div>
+            </div>
+            <div class="button_container" id="prev">
+                <button class="fa fa-angle-left"></button>
+            </div>
+            <div class="button_container" id="next">
+                <button class="fa fa-angle-right"></button>
+            </div>
+        </div>
+        <div class="animated-logo-container">
+            <div class="container-fluid" id="animated-logo-container">
+                <div class="container-fluid p-0 m-0 text-center">
+                    <div class="slide-container">
+                        <div class="slider">
+                            <div>
+                                <h3 class="">डीएवी पब्लिक स्कूल </h3>
+                                <h4>औरंगाबाद, Bihar</h4>
+                                <p>​Managed by DAV College Managing Commitee, Chitra Gupta Road, New Delhi -
+                                    110055</p>
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <div>
+                                <h3>DAV Public School </h3>
+                                <h4>Aurangabad, Bihar</h4>
+                                <p>​Managed by DAV College Managing Commitee, Chitra Gupta Road, New Delhi -
+                                    110055</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header> -->

@@ -1,0 +1,225 @@
+/* header#header {
+  display: flex;
+  flex-direction: column;
+} */
+
+
+header#header nav {
+  z-index: 5;
+}
+header#header .navbar-brand {
+  margin-right: 0.5rem;
+}
+
+header#header .navbar > div {
+  padding: 0;
+}
+
+
+header#header a.navbar-brand > div > img {
+  /* width: 100px; */
+  height: 3.5rem;
+  /* height: 100px; */
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 255, 0.714));
+}
+
+/* header#header nav a.navbar-brand { */
+  /* position: absolute; */
+ /*width: 80px; */
+  /* height: 75px; */
+  /* display: grid; */
+  /* place-items: center; */
+  /* border-radius: 50%; */
+  /* top: 0; */
+/* } */
+
+/* header#header nav a.navbar-brand:hover {
+  background-color: #f8f9fa !important;
+} */
+
+
+header#header a.navbar-brand > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -0.5rem;
+}
+
+/*      .navbar-brand div {
+      position: relative;
+      top: 11px;
+      left: -0.3rem;
+  } */
+
+header#header .navbar-brand div h1 {
+  /* font-size: 28px; */
+  font-size: 2rem;
+  margin: 0;
+}
+
+header#header .navbar-brand div h1 > span {
+  font-family: "Fredoka One", cursive !important;
+}
+
+.navbar-brand div h1 > span:first-child {
+  color: gold;
+}
+
+header#header .navbar-brand div h1 > span:first-child {
+  text-shadow: 0 1px 2px gold;
+  margin-left: 0.3rem;
+}
+
+header#header .navbar-brand div h1 > span:last-child {
+  text-shadow: 0 1px 1px #000;
+  font-size: 16px;
+  /* left: -0.5rem; */
+  margin-left: -0.5rem;
+  /* position: relative; */
+  /* left: -0.4rem; */
+}
+
+header#header .navbar-brand div > span {
+  /* text-shadow: 0 1px 1px #000; */
+  /* position: relative; */
+  /* font-size: 12px; */
+  /* top: -1.4rem; */
+  /* padding-left: 5px; */
+  text-shadow: 0 1px 1px #000;
+  font-size: 14px;
+  font-family: serif;
+  margin-top: -0.2rem;
+  margin-left: 0.5rem;
+  /* padding-left: 5px; */
+}
+
+
+/* carousel */
+header#header>div.carousel {
+  /* background: linear-gradient(rgb(164, 162, 162), lightgray); */
+  min-height: 450px;
+  height: calc(100vh - 60px);
+  /* margin-top: 82px; */
+  max-height: 700px;
+  /* height: 100vh; */
+  /* flex: 1; */
+}
+
+header#header>div.carousel>div.carousel_container{
+  height: 100%;
+  position: relative;
+  width: 100%;
+  /* background-color: green; */
+}
+
+header#header>div.carousel>div.carousel_container div.carousel_item{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  /* transition: 1s; */
+  opacity: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header#header>div.carousel>div.carousel_container div.carousel_item:first-child {
+  background-image: linear-gradient(to top, #000, transparent), url("../image/7408.jpg");
+}
+header#header>div.carousel>div.carousel_container div.carousel_item:nth-child(2) {
+  background-image: linear-gradient(to top, #000, transparent), url("../image/1908.i121.003..isometric\ homeschooling\ illustration.jpg");
+}
+header#header>div.carousel>div.carousel_container div.carousel_item:last-child {
+  background-image: linear-gradient(to top, #000, transparent), url("../image/three.jpeg");
+}
+header#header>div.carousel>div.carousel_container div.carousel_item.current {
+  opacity: 1;
+  /* transition: 1s; */
+}
+
+.transition-1s {
+  transition: 1s;
+}
+
+header#header>div.carousel>div.carousel_container .button_container {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  justify-content: flex-end;
+  /* top: 50%; */
+  display: flex;
+  align-items: center;
+  opacity: 0.00001;
+  /* top: calc(50vh - 82px); */
+}
+header#header>div.carousel>div.carousel_container .button_container button {
+  font-size: 3.5rem;
+  color: #c5c5c5;
+  background: transparent;
+  padding: 0 0.7rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.442);
+}
+header#header>div.carousel>div.carousel_container .button_container button:hover {
+  background-color: #2626265f;
+}
+header#header>div.carousel>div.carousel_container .button_container:hover {
+  /* visibility: visible; */
+  opacity: 1;
+}
+header#header>div.carousel>div.carousel_container .button_container#prev{
+  left: 0;
+  padding-left: 1rem;
+  justify-content: flex-start;
+}
+header#header>div.carousel>div.carousel_container .button_container:last-child{
+  right: 0;
+  padding-right: 1rem;
+}
+
+
+@media screen and (max-width: 991px) {
+  header#header .navbar-collapse {
+    border-top: 1px solid rgba(17, 34, 51, 0.802);
+    margin-top: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  header#header .navbar {
+    padding: 0.5rem;
+  }
+
+  header#header .navbar-brand div > span {
+    font-size: 12px;
+    margin-top: -0.2rem;
+    margin-left: 0.5rem;
+  }
+
+  header#header .navbar-brand div h1 > span:last-child {
+    font-size: 13px;
+    margin-left: -0.4rem;
+  }
+
+  header#header a.navbar-brand > div > img {
+    height: 3.3rem;
+  }
+
+  header#header .navbar-brand div h1 {
+    font-size: 1.7rem;
+  }
+
+  header#header a.navbar-brand > div > div {
+    margin-left: -0.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+    #main>div.container-xl {
+    max-width: 1500px;
+  }
+}
+
+

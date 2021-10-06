@@ -1,0 +1,340 @@
+footer {
+    padding-top: 1rem;
+    background-color: #212331;
+}
+
+footer>div.container {
+    display: flex;
+}
+
+footer>div.container>section {
+    /* display: inline-block; */
+    margin-top: 2rem;
+    overflow: hidden;
+    display: flex;
+    flex: 1;
+    max-width: 500px;
+    /* min-width: 250px; */
+}
+
+footer>div.container>section>div.container {
+    /* background-color: green; */
+    font-family: Verdana;
+}
+
+footer>div.container>section>div.container>header>h1 {
+    /* background-color: red; */
+    font-size: 1rem;
+    /* border-bottom: 1px solid gold; */
+    font-weight: 400;
+    color: #fff;
+}
+
+footer>div.container>section>div.container>header>hr {
+    color: #857101;
+    height: 1px;
+    width: 60px;
+    margin: 0;
+}
+
+footer>div.container>section>div.container>div.main {
+    margin-top: 1rem;
+}
+
+footer>div.container>section>div.container>div.main>ul {
+    list-style: none;
+    margin-bottom: 0;
+    /* font-family: Verdana; */
+    /* font-family: 'Titillium Web', sans-serif, Source Sans Pro, Helvetica Neue, Helvetica, Arial,sans-serif; */
+}
+
+footer>div.container>section>div.container>div.main>ul>li {
+    border-bottom: 1.5px dashed #3a3c44;
+    padding: 0.6rem 0;
+    font-size: 0.92rem;
+    margin: 0;
+}
+
+/* footer>div.container>section>div.container>div.main>ul>li:last-child {
+    padding-bottom: 0;
+} */
+
+footer>div.container>section>div.container>div.main>ul>li>a {
+    color: #c5c5c5;
+    text-decoration: none;
+}
+
+footer>div.container>section>div.container>div.main>ul>li>a:hover {
+    color: #fff;
+}
+
+/* footer>div.container>section>div.container>div.main{
+
+} */
+
+/* section 1. */
+footer>div.container>.sec_1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    padding: 0 0.6rem;
+}
+
+footer>div.container>.sec_1>div.container {
+    text-align: center;
+    padding-right: 0.9rem;
+}
+
+footer>div.container>.sec_1>div.container>img {
+    height: 85px;
+}
+
+footer>div.container>.sec_1>div.container>div.name__address {
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-top: 0.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* footer>div.container>.sec_1>div.container>div.name__address>span:first-child {
+    font-weight: 500;
+} */
+
+footer>div.container>.sec_1>div.container>div.name__address>span:last-child {
+    color: grey;
+    font-weight: 400;
+    display: block;
+}
+
+/* contact */
+footer>div.container>.sec_1>div.container>div.contact {
+    /* background-color: red; */
+    margin-top: 0.5rem;
+}
+
+footer>div.container>.sec_1>div.container>div.contact>span {
+    white-space: nowrap;
+    margin: 0 0.4rem;
+}
+
+footer>div.container>.sec_1>div.container>div.contact>span>i {
+    margin-right: 0.3rem;
+    color: #fff;
+}
+
+footer>div.container>.sec_1>div.container>div.contact>span {
+    display: inline-block;
+    color: #c5c5c5;
+    font-size: 0.9rem;
+}
+
+/* social handle */
+footer>div.container>.sec_1>div.container>div.social_handle {
+    display: flex;
+    margin-top: 0.7rem;
+    justify-content: center;
+}
+
+footer>div.container>.sec_1>div.container>div.social_handle>a {
+    margin: 0.5rem;
+    width: 30px;
+    text-decoration: none;
+    height: 30px;
+    font-size: 0.9rem;
+    display: grid;
+    place-items: center;
+    border: 1px solid #fff;
+}
+
+footer>div.container>.sec_1>div>p {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+/* section 2. */
+footer>div.container>section.sec_2>div.container {
+    padding-left: 15px;
+    border-left: 1.3px dashed #c5c5c5;
+}
+
+
+/* section 4. */
+
+/* footer>div.container>section.sec_4>div.container>div.main>div.timestamp_container {
+} */
+footer>div.container>section.sec_4>div.container>div.main {
+    font-size: 0.82rem;
+    display: grid;
+    grid-gap: 0.6rem;
+}
+footer>div.container>section.sec_4>div.container>div.main>div.weather_container {
+    display: flex;
+    align-items: center;
+}
+footer>div.container>section.sec_4>div.container>div.main>div.weather_container h1 {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+footer>div.container>section.sec_4>div.container>div.main>div.weather_container>div>i.fa-cloud {
+    font-size: 3.2rem;
+}
+footer>div.container>section.sec_4>div.container>div.main>div.weather_container > .weather {
+    text-align: left;
+    margin-left: 0.5rem;
+}
+
+footer>div.container>section.sec_4>div.container>div.main>div.humidity_and_wind {
+    /* background-color: blue; */
+    margin: 0.4rem 0 0.4rem 0;
+    font-size: 0.9rem;
+}
+footer>div.container>section.sec_4>div.container>div.main>div.air_pollution {
+    width: 100%;
+    min-width: 200px;
+    border: 1.8px dashed #c5c5c5;
+    text-align: left;
+}
+footer>div.container>section.sec_4>div.container>div.main>div.air_pollution>span {
+    /* text-align: left; */
+    display: flex;
+    /* align-items: center; */
+    padding: 0.6rem;
+    justify-content: center;
+    font-size: 0.9rem;
+    align-items: center;
+    min-height: 65px;
+}
+footer>div.container>section.sec_4 span.animated_heart {
+    min-width: 50px;
+    display: grid;
+    place-items: center;
+}
+footer>div.container>section.sec_4 span.animated_heart::before {
+    font-size: 1.5rem;
+    color: #07a207;
+    animation: pump 1s linear infinite;
+}
+
+@keyframes pump {
+    0% {
+        font-size: 1.7rem;
+    }
+
+    40% {
+        font-size: 1.7rem;
+    }
+
+    50% {
+        font-size: 2.5rem;
+    }
+
+    70% {
+        font-size: 1.7rem;
+    }
+
+    80% {
+        font-size: 2.5rem;
+    }
+
+    100% {
+        font-size: 1.7rem;
+    }
+}
+
+/* copyright section  */
+footer .copyright__sec {
+    background-color: #2b2d3b;
+    margin-top: 2rem;
+}
+
+footer .copyright__sec>div {
+    padding: 1.3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .copyright__sec p {
+    color: #bfbfbf;
+    text-transform: capitalize;
+    font-size: 13px;
+    margin: 0;
+}
+
+footer .copyright__sec p:last-child {
+    padding-left: 2rem;
+}
+
+footer .copyright__sec p a {
+    text-transform: capitalize;
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+footer .copyright__sec button {
+    /* width: 3rem; */
+    /* height: 3rem; */
+    display: grid;
+    place-items: center;
+    border: none;
+    outline: none;
+    /* border-radius: 50%; */
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 1.6rem;
+    padding-bottom: 0.6rem;
+}
+
+@media screen and (max-width: 700px) {
+    footer .copyright__sec>div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .copyright__sec>div p:last-child {
+        padding-left: 0;
+        padding-top: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    footer>div.container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    footer>div.container>section {
+        display: inline-block;
+        min-width: 250px;
+    }
+}
+@media screen and (max-width: 539px) {
+    footer>div.container>section.sec_2>div.container {
+        padding-left: 0;
+        border-left: none;
+    }
+    footer>div.container>section>div.container {
+        text-align: center;
+    }
+    footer>div.container>section>div.container>header>hr {
+        margin: auto;
+    }
+    footer>div.container>section.sec_4>div.container>div.main>div.air_pollution {
+        margin: auto;
+    }
+    footer>div.container>section.sec_4>div.container>div.main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 0.5rem;
+        text-align: left;
+        justify-items: center;
+    }
+    /* footer>div.container>section.sec_4>div.container>div.main>div.air_pollution>span>span:first-child {
+        margin-top: 0.5rem;
+    } */
+}
+
+@media screen and (min-width: 539px) {
+    footer>div.container>.sec_1>div.container>div.contact>span {
+        margin: 0;
+    }
+}

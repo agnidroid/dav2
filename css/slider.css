@@ -1,0 +1,188 @@
+.animated-logo-container {
+  width: fit-content;
+  /* background-color: red; */
+  position: absolute;
+  text-shadow: 0 0 5px #c5c5c5;
+  top: 50%;
+  left: 50%;
+  /* background-color: red; */
+  transform: translate(-50%, -50%);
+  display: grid;
+  z-index: 2;
+  place-items: center;
+}
+  .animated-logo-container
+  #animated-logo-container {
+  width: 100%;
+  /* background-color: #2626261d; */
+  display: flex;
+}
+  .animated-logo-container
+  #animated-logo-container::selection {
+  color: white;
+  background-color: transparent;
+}
+
+  .animated-logo-container
+  #animated-logo-container
+  .school-logo {
+  display: flex;
+  align-items: center;
+}
+  .animated-logo-container
+  #animated-logo-container
+  .school-logo
+  img {
+  width: 200px !important;
+}
+
+  .animated-logo-container
+  #animated-logo-container
+  .slide-container
+  > div
+  h3 {
+  font-size: 49px !important;
+  margin-bottom: 10px !important;
+  text-shadow: 0px 0px 2px #fff;
+  font-family: "Lobster", cursive;
+}
+  .animated-logo-container
+  #animated-logo-container
+  .slide-container
+  > div
+  p {
+  position: relative;
+  top: 0px;
+  font-size: 18px !important;
+}
+  .animated-logo-container
+  #animated-logo-container
+  .slide-container {
+  color: white;
+  font-weight: bolder;
+  height: 250px;
+  overflow: hidden;
+}
+  .animated-logo-container
+  #animated-logo-container
+  .slide-container
+  > div {
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .animated-logo-container
+  #animated-logo-container
+  .slide-container
+  > div:first-child {
+  animation: slide 7s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    margin-top: -500px;
+  }
+
+  5% {
+    margin-top: -250px;
+  }
+  50% {
+    margin-top: -250px;
+  }
+
+  55% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #main
+    > div.main__header
+    >     .animated-logo-container
+    #animated-logo-container {
+    width: 1100px !important;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  #main
+    > div.main__header
+    >     .animated-logo-container
+    #animated-logo-container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+  #main
+    > div.main__header
+    >     .animated-logo-container
+    #animated-logo-container
+    .slide-container
+    > div
+    h3 {
+    font-size: 49px !important;
+  }
+  #main
+    > div.main__header
+    >     .animated-logo-container
+    #animated-logo-container
+    .slide-container
+    > div
+    p {
+    font-size: 18px !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  #main
+    > div.main__header
+    >     .animated-logo-container
+    #animated-logo-container
+    .slide-container
+    > div
+    h3 {
+    font-size: 44px !important;
+  }
+  #main
+    > div.main__header
+    >     .animated-logo-container
+    #animated-logo-container
+    .slide-container
+    > div
+    p {
+    font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  #main
+    > div.main__header
+    >     .animated-logo-container
+    #animated-logo-container
+    .slide-container
+    > div
+    h3 {
+    font-size: 36px !important;
+  }
+  #main
+    > div.main__header
+    >     .animated-logo-container
+    #animated-logo-container
+    .slide-container
+    > div
+    p {
+    font-size: 11px !important;
+  }
+  #main
+    > div.main__header
+    >     .animated-logo-container
+    #animated-logo-container
+    .school-logo
+    img {
+    width: 170px !important;
+  }
+}
